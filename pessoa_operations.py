@@ -1,7 +1,6 @@
 import pandas
 from conexao import Conexao
 from pessoa import Pessoa
-import json
 
 class PessoaOperations:
     
@@ -39,13 +38,13 @@ class PessoaOperations:
         try:
             resultado = cursor.execute(sql)
             if resultado <= 0:
-                return {"message":"Falha na gravação da pessoa"}
+                return f"{'message':'Falha na gravação da pessoa'}"
         
         except ConnectionRefusedError as error2:
-            return {"message":f"{error2.strerror}"}
+            return f'{"message":f"{error2.strerror}"}'
         
         except ConnectionError as error:
-            return {"message":f"{error.strerror}"}
+            return f"{'message':'{error.strerror}'}"
         
         finally:
             conexao.commit()
