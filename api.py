@@ -4,7 +4,7 @@ from pessoa import Pessoa
 from pessoa_operations import PessoaOperations
 
 app = FastAPI()
-
+# teste comentario
 @app.get("/exemplo")
 def example() -> str:
     return "Olá Mundo"
