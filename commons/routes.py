@@ -1,0 +1,7 @@
+URL_PREFIX = '/aula'
+API_DOC = URL_PREFIX + '/doc/api'
+API_DOC_JSON = URL_PREFIX + '/doc/api.json'
+API_DOC_REDOC = URL_PREFIX + '/doc/redoc'
+API_HEALTH = URL_PREFIX + '/health'
+API_READINESS = URL_PREFIX + '/health/readiness'
+ENABLED_ROUTES = (API_DOC_JSON, API_DOC_REDOC, API_DOC, API_HEALTH)
